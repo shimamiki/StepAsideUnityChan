@@ -30,8 +30,9 @@ public class BackWallController : MonoBehaviour {
 
 	//トリガーモードでほかのオブジェクトと接触した場合
 	void OnTriggerEnter(Collider other){
+
+		//Debug.Log ("あああああ");
 		if (other.gameObject.tag == "CarTag" || other.gameObject.tag == "TrafficConeTag" ||  other.gameObject.tag == "CoinTag") {
-			Debug.Log ("あああああ");
 			Destroy (other.gameObject);
 		}
 
